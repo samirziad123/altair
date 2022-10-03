@@ -152,7 +152,6 @@ export class AltairConfig {
     'vi-VN': 'Vietnamese',
   };
   query_history_depth = isElectron ? 100 : 15;
-  disableLineNumbers = false;
   defaultTheme = 'system';
   themes = [ 'light', 'dark', 'dracula', 'system' ];
   isTranslateMode = isTranslateMode;

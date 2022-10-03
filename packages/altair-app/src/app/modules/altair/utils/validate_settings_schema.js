@@ -114,10 +114,8 @@ var validate = (function() {
                   return false;
                 }
                 var valid2 = errors === errs_2;
-                if (valid2) {
-                }
-                if (errors === errs_1) {
-                }
+                if (valid2) {}
+                if (errors === errs_1) {}
                 var valid1 = errors === errs_1;
               }
               if (valid1) {
@@ -184,8 +182,7 @@ var validate = (function() {
                         if (equal(data1, schema2[i2])) {
                           valid2 = true;
                           break;
-                        }
-                      if (!valid2) {
+                        } if (!valid2) {
                         validate.errors = [{
                           keyword: 'enum',
                           dataPath: (dataPath || '') + '.language',
@@ -196,15 +193,11 @@ var validate = (function() {
                           message: 'should be equal to one of the allowed values'
                         }];
                         return false;
-                      } else {
-                      }
-                      if (errors === errs_2) {
-                      }
+                      } else {}
+                      if (errors === errs_2) {}
                       var valid2 = errors === errs_2;
-                      if (valid2) {
-                      }
-                      if (errors === errs_1) {
-                      }
+                      if (valid2) {}
+                      if (errors === errs_1) {}
                       var valid1 = errors === errs_1;
                     }
                     if (valid1) {
@@ -233,8 +226,7 @@ var validate = (function() {
                             var valid2 = errors === errs_2;
                             if (!valid2) break;
                           }
-                          if (errs__1 == errors) {
-                          }
+                          if (errs__1 == errors) {}
                         } else {
                           validate.errors = [{
                             keyword: 'type',
@@ -247,8 +239,7 @@ var validate = (function() {
                           }];
                           return false;
                         }
-                        if (errors === errs_1) {
-                        }
+                        if (errors === errs_1) {}
                         var valid1 = errors === errs_1;
                       }
                       if (valid1) {
@@ -328,34 +319,34 @@ var validate = (function() {
                                 var valid1 = errors === errs_1;
                               }
                               if (valid1) {
-                                if (data.disableLineNumbers === undefined) {
+                                if (data.theme === undefined) {
                                   valid1 = true;
                                 } else {
                                   var errs_1 = errors;
-                                  if (typeof data.disableLineNumbers !== "boolean") {
+                                  if (typeof data.theme !== "string") {
                                     validate.errors = [{
                                       keyword: 'type',
-                                      dataPath: (dataPath || '') + '.disableLineNumbers',
-                                      schemaPath: '#/properties/disableLineNumbers/type',
+                                      dataPath: (dataPath || '') + '.theme',
+                                      schemaPath: '#/properties/theme/type',
                                       params: {
-                                        type: 'boolean'
+                                        type: 'string'
                                       },
-                                      message: 'should be boolean'
+                                      message: 'should be string'
                                     }];
                                     return false;
                                   }
                                   var valid1 = errors === errs_1;
                                 }
                                 if (valid1) {
-                                  if (data.theme === undefined) {
+                                  if (data['theme.dark'] === undefined) {
                                     valid1 = true;
                                   } else {
                                     var errs_1 = errors;
-                                    if (typeof data.theme !== "string") {
+                                    if (typeof data['theme.dark'] !== "string") {
                                       validate.errors = [{
                                         keyword: 'type',
-                                        dataPath: (dataPath || '') + '.theme',
-                                        schemaPath: '#/properties/theme/type',
+                                        dataPath: (dataPath || '') + '[\'theme.dark\']',
+                                        schemaPath: '#/properties/theme.dark/type',
                                         params: {
                                           type: 'string'
                                         },
@@ -366,15 +357,15 @@ var validate = (function() {
                                     var valid1 = errors === errs_1;
                                   }
                                   if (valid1) {
-                                    if (data['theme.dark'] === undefined) {
+                                    if (data['theme.editorFontFamily'] === undefined) {
                                       valid1 = true;
                                     } else {
                                       var errs_1 = errors;
-                                      if (typeof data['theme.dark'] !== "string") {
+                                      if (typeof data['theme.editorFontFamily'] !== "string") {
                                         validate.errors = [{
                                           keyword: 'type',
-                                          dataPath: (dataPath || '') + '[\'theme.dark\']',
-                                          schemaPath: '#/properties/theme.dark/type',
+                                          dataPath: (dataPath || '') + '[\'theme.editorFontFamily\']',
+                                          schemaPath: '#/properties/theme.editorFontFamily/type',
                                           params: {
                                             type: 'string'
                                           },
@@ -385,34 +376,34 @@ var validate = (function() {
                                       var valid1 = errors === errs_1;
                                     }
                                     if (valid1) {
-                                      if (data['theme.editorFontFamily'] === undefined) {
+                                      if (data['theme.editorFontSize'] === undefined) {
                                         valid1 = true;
                                       } else {
                                         var errs_1 = errors;
-                                        if (typeof data['theme.editorFontFamily'] !== "string") {
+                                        if ((typeof data['theme.editorFontSize'] !== "number")) {
                                           validate.errors = [{
                                             keyword: 'type',
-                                            dataPath: (dataPath || '') + '[\'theme.editorFontFamily\']',
-                                            schemaPath: '#/properties/theme.editorFontFamily/type',
+                                            dataPath: (dataPath || '') + '[\'theme.editorFontSize\']',
+                                            schemaPath: '#/properties/theme.editorFontSize/type',
                                             params: {
-                                              type: 'string'
+                                              type: 'number'
                                             },
-                                            message: 'should be string'
+                                            message: 'should be number'
                                           }];
                                           return false;
                                         }
                                         var valid1 = errors === errs_1;
                                       }
                                       if (valid1) {
-                                        if (data['theme.editorFontSize'] === undefined) {
+                                        if (data['theme.fontsize'] === undefined) {
                                           valid1 = true;
                                         } else {
                                           var errs_1 = errors;
-                                          if ((typeof data['theme.editorFontSize'] !== "number")) {
+                                          if ((typeof data['theme.fontsize'] !== "number")) {
                                             validate.errors = [{
                                               keyword: 'type',
-                                              dataPath: (dataPath || '') + '[\'theme.editorFontSize\']',
-                                              schemaPath: '#/properties/theme.editorFontSize/type',
+                                              dataPath: (dataPath || '') + '[\'theme.fontsize\']',
+                                              schemaPath: '#/properties/theme.fontsize/type',
                                               params: {
                                                 type: 'number'
                                               },
@@ -423,29 +414,8 @@ var validate = (function() {
                                           var valid1 = errors === errs_1;
                                         }
                                         if (valid1) {
-                                          if (data['theme.fontsize'] === undefined) {
-                                            valid1 = true;
-                                          } else {
-                                            var errs_1 = errors;
-                                            if ((typeof data['theme.fontsize'] !== "number")) {
-                                              validate.errors = [{
-                                                keyword: 'type',
-                                                dataPath: (dataPath || '') + '[\'theme.fontsize\']',
-                                                schemaPath: '#/properties/theme.fontsize/type',
-                                                params: {
-                                                  type: 'number'
-                                                },
-                                                message: 'should be number'
-                                              }];
-                                              return false;
-                                            }
-                                            var valid1 = errors === errs_1;
-                                          }
                                           if (valid1) {
-                                            if (valid1) {
-                                              if (valid1) {
-                                              }
-                                            }
+                                            if (valid1) {}
                                           }
                                         }
                                       }
@@ -569,10 +539,6 @@ validate.schema = {
     "theme.fontsize": {
       "description": "Base Font Size\n(Default - 24)",
       "type": "number"
-    },
-    "disableLineNumbers":{
-      "description": "Disable Line Numbers",
-      "type": "boolean"
     },
     "themeConfig": {
       "description": "Theme config object"
